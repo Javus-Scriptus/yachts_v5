@@ -1,0 +1,121 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+  }
+  .is-hidden {
+    display: none;
+  }
+  .no-scroll {
+    overflow: hidden;
+    height: 100vh;
+  }
+  .thanks__modal__send__yacht {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: #1f212d;
+    color: white;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    background-image: url(../../img/section5/background-blur.png);
+    background-position: bottom 80px right -40px;
+    background-size: 400px;
+    background-repeat: no-repeat;
+    @media screen and (min-width: 768px) {
+      border-radius: 40px;
+      background-position: bottom 30px right -30px;
+      background-size: 600px;
+    }
+    @media screen and (min-width: 1199px) {
+      background-position: bottom -0px right -30px;
+      background-size: 600px;
+    }
+  }
+  .box__modal {
+    width: 335px;
+    height: 436px;
+    @media screen and (min-width: 768px) {
+      width: 570px;
+      height: 522px;
+    }
+    @media screen and (min-width: 1199px) {
+    }
+  }
+  .thanks__close__icon {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    margin-top: 14px;
+    margin-left: 277px;
+    cursor: pointer;
+    @media screen and (min-width: 768px) {
+      margin-top: 32px;
+      margin-left: 514px;
+      width: 24px;
+      height: 24px;
+    }
+    @media screen and (min-width: 1199px) {
+    }
+  }
+  .thanks__yacht__img {
+    margin: 0 auto;
+    width: 287px;
+    height: 149px;
+    @media screen and (min-width: 768px) {
+      margin-top: 37px;
+      width: 338px;
+      height: 198px;
+    }
+    @media screen and (min-width: 1199px) {
+    }
+  }
+  .thanks__text {
+    text-align: left;
+    margin-left: 24px;
+    margin-right: 24px;
+    @media screen and (min-width: 768px) {
+      margin-left: 64px;
+      margin-right: 64px;
+    }
+    @media screen and (min-width: 1199px) {
+    }
+  }
+  
+  .thanks__h2__yacht__rend {
+    font-family: DM Sans;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28.8px;
+    @media screen and (min-width: 768px) {
+      font-size: 32px;
+      line-height: 38.4px;
+    }
+    @media screen and (min-width: 1199px) {
+    }
+  }
+  
+  .thanks__p__yacht__rend {
+    font-family: DM Sans;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19.6px;
+    letter-spacing: -2%;
+    margin-top: 14px;
+    width: 37.37vw;
+    margin-bottom: 40px;
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+      line-height: 22.4px;
+      margin-top: 16px;
+      margin-bottom: 64px;
+    }
+    @media screen and (min-width: 1199px) {
+    }
+  }
