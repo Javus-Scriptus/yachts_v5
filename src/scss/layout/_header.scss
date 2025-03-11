@@ -1,0 +1,138 @@
+@use '/scss/abstracts/_mixins.scss';
+@use '/scss/abstracts/_variables.scss';
+@use '/scss/abstracts/_placeholders.scss';
+@use '/scss/abstracts/_base.scss';
+
+.header {
+  border-bottom: 1px solid;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px 4%;
+  background-color: #24252a;
+
+  &__logo {
+    margin-right: auto;
+    width: 25px;
+    height: 25px;
+  }
+
+  &__breadcrumbs {
+    display: flex;
+    gap: 25px;
+  }
+
+  &__link {
+    color: #f6f5ef;
+    font-family: 'DM Sans';
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 118%; /* 16.52px */
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    transition: all 0.5s ease 0s;
+
+    &:hover {
+      color: rgba(0, 136, 169, 1);
+    }
+  }
+}
+
+//TODO mobile
+@media all and (max-width: 768px) {
+  .header {
+    &__nav {
+      height: 0;
+      width: 100%;
+      position: fixed;
+      z-index: 2;
+      top: 0;
+      left: 0;
+      background-color: #24252a;
+      overflow-y: hidden;
+      transition: 0.5s;
+    }
+
+    &__breadcrumbs {
+      flex-direction: column;
+    }
+
+    &__link {
+      padding: 10px;
+      text-decoration: none;
+      font-size: 21px;
+      color: #edf0f1;
+      display: block;
+      transition: 0.3s;
+
+      &:hover,
+      &:focus {
+        color: rgba(0, 136, 169, 0.8);
+      }
+    }
+
+    &__breadcrumbs {
+      position: relative;
+      top: 25%;
+      width: 100%;
+      text-align: center;
+      margin-top: 30px;
+    }
+  }
+
+  .burger {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 35px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    margin-left: 25px;
+    z-index: 3;
+
+    &__stripe {
+      background: #edf0f1;
+      width: 40px;
+      height: 4px;
+      border-radius: 5px;
+      transition: all 0.5s ease-in-out;
+
+      &::before,
+      &::after {
+        content: '';
+        background: #edf0f1;
+        color: #edf0f1;
+        position: absolute;
+        width: 40px;
+        height: 4px;
+        border-radius: 5px;
+        transition: all 0.5s ease-in-out;
+      }
+
+      &::before {
+        transform: translateY(-12px);
+      }
+
+      &::after {
+        transform: translateY(12px);
+      }
+    }
+
+    &.open .burger__stripe {
+      transform: translateX(-50px);
+      background: transparent;
+      box-shadow: none;
+    }
+
+    &.open .burger__stripe::before {
+      transform: rotate(45deg) translate(35px, -35px);
+    }
+
+    &.open .burger__stripe::after {
+      transform: rotate(-45deg) translate(35px, 35px);
+    }
+  }
+}
