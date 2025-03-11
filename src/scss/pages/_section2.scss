@@ -2,47 +2,47 @@
   flex-direction: column;
 }
 .imgbox {
-  display: grid;
-  grid-template-columns: 533px 308px;
-  grid-template-rows: 473px 244px;
-  gap: 32px;
-  justify-content: center;
   &__yacht {
-    outline: 1px solid red;
+    position: relative;
     &:nth-child(1) {
-      width: 308px;
-      height: 289px;
-      grid-column: 2;
-      grid-row: 1;
-      align-self: start;
+      left: -104px;
+      top: 160px;
+      img {
+        width: 308px;
+        height: 289px;
+      }
     }
     &:nth-child(2) {
-      width: 533px;
-      height: 473px;
-      grid-column: 1;
-      grid-row: 1 / span 2;
+      left: -140px;
+      img {
+        width: 533px;
+        height: 473px;
+      }
     }
     &:nth-child(3) {
-      width: 260px;
-      height: 244px;
-      grid-column: 2;
-      grid-row: 2;
-      align-self: end;
+      left: -84px;
+      top: 32px;
+      img {
+        width: 260px;
+        height: 244px;
+      }
     }
   }
 }
-
 .textcont {
-  width: 80%;
+  position: relative;
   margin: 0 auto;
-  gap: 64px;
-
+  margin-top: -60px;
+  width: 55%;
+  z-index: 1;
   &__header {
-    font: 500 100px 'DM Sans', sans-serif;
+    font: 500 70px 'DM Sans', sans-serif;
+    line-height: 1.1;
     color: white;
+    margin-bottom: 64px;
   }
-
   &__button {
+    margin-bottom: 164px;
     width: 153px;
     height: 48px;
     border-radius: 60px;
