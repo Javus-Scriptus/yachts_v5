@@ -32,6 +32,10 @@ $font-family_1: "DM Sans";
 	color: $color_1;
 	font-weight: normal;
 }
+
+.review__container{
+	display: flex;
+}
 .review__heading {
 	font-size: 32px;
 	font-weight: 500;
