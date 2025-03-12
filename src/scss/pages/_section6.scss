@@ -35,7 +35,10 @@ $font-family_1: "DM Sans";
 
 .review__container{
 	display: flex;
+	justify-content: center;
 }
+
+
 .review__heading {
 	font-size: 32px;
 	font-weight: 500;
@@ -56,6 +59,7 @@ $font-family_1: "DM Sans";
 .review__inner-head {
 	display: flex;
 	margin-bottom: 64px;
+	display: block;
 }
 .review__slider {
 	display: flex;
@@ -108,6 +112,10 @@ $font-family_1: "DM Sans";
 	top: 64px;
 }
 @media (max-width:1200px) {
+	.review__slider{
+		display: flex;
+		flex-wrap: wrap;
+	}
 	.accordion__button {
 		display: none;
 	}
@@ -137,6 +145,7 @@ $font-family_1: "DM Sans";
 	.review__slider-item {
 		margin: auto;
 		margin-bottom: 20px;
+		display: block;
 	}
 	.review__text {
 		margin-left: 26vw;
