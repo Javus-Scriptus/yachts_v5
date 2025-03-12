@@ -13,7 +13,8 @@
   .swiper {
     width: 100%;
     max-width: 80vw;
-    height: 85vh;
+    height: 87vh;
+    // overflow: visible !important;
   }
 
   .swiper-slide {
@@ -38,22 +39,24 @@
     background-color: #f6f5ef !important;
   }
 
-  .swiper-button-prev::after {
-    position: relative;
-    height: 1px !important;
-    width: 1px !important;
-    color: #f6f5ef;
-    top: 1.5vh;
-    right: 3.9vw;
-  }
-
+  .swiper-button-prev::after,
   .swiper-button-next::after {
     position: relative;
     height: 1px !important;
     width: 1px !important;
     color: #f6f5ef;
     top: 1.5vh;
-    right: 0.3vw;
+    top: 33.5vh;
+  }
+
+  .swiper-button-prev::after {
+    // right: 3.9vw;
+    left: 22vw;
+  }
+
+  .swiper-button-next::after {
+    // right: 0.3vw;
+    right: 27vw;
   }
 
   // section styles
@@ -220,19 +223,11 @@
 // TODO desktop
 @media screen and (min-width: 1024px) {
   .swiper-button-prev::after {
-    position: relative;
-    height: 1px !important;
-    width: 1px !important;
-    color: #f6f5ef;
-    right: 1vw;
+    left: 0vw;
   }
 
   .swiper-button-next::after {
-    position: relative;
-    height: 1px !important;
-    width: 1px !important;
-    color: #f6f5ef;
-    right: 0.3vw;
+    right: 1.3vw;
   }
 
   .swiper {
@@ -254,7 +249,7 @@
 
     &__name {
       margin-left: 2.5vw;
-       margin-bottom: 6.5vh;
+      margin-bottom: 6.5vh;
     }
 
     &__heading {
@@ -289,9 +284,8 @@
   .swiper-slide {
     height: 500px;
   }
-.yacht {
-  .description {
-    
+  .yacht {
+    .description {
+    }
   }
-}
 }
