@@ -16,12 +16,15 @@
   }
 
   &__logo {
+    @extend %regular-text;
+    text-transform: uppercase;
     margin-right: auto;
-    width: 25px;
+    width: 100px;
     height: 25px;
     display: flex;
-    text-transform: uppercase;
-    @extend %regular-text;
+    white-space: nowrap;
+    gap: 30px;
+    outline: 2px solid red;
   }
 
   &__breadcrumbs {
