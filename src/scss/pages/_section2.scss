@@ -2,6 +2,11 @@
   flex-direction: column;
 }
 .imgbox {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
   &__yacht {
     position: relative;
     &:nth-child(1) {
@@ -52,6 +57,55 @@
     color: white;
   }
 }
+@media (max-width: 768px) {
+  .imgbox {
+    &__yacht {
+      width: 100%;
+      margin: 0 auto;
+      position: relative;
+      &:nth-child(1) {
+        left: 0;
+        top: 0;
+        margin-bottom: 4.167vw;
+        img {
+          width: 100%;
+          height: 631px;
+        }
+      }
+      &:nth-child(2) {
+        gap: 6.4vw;
+        left: -9vw;
+        img {
+          width: 40.104vw;
+          height: 289px;
+        }
+      }
+      &:nth-child(3) {
+        left: 36.167vw;
+        top: 0;
+        margin-top: -11.589vw;
+        img {
+          width: 33.854vw;
+          height: 244px;
+        }
+      }
+    }
+  }
+  .textcont {
+    margin-top: -12.813vw;
+    width: 83.464vw;
+    &__header {
+      font: 500 70px 'DM Sans', sans-serif;
+      margin-bottom: 8.333vw;
+    }
+    &__button {
+      margin-bottom: 13.021vw;
+      font: 700 18px 'DM Sans', sans-serif;
+      
+    }
+  }
+}
+
 @media (max-width: 375px) {
   .imgbox {
     &__yacht {
@@ -61,7 +115,7 @@
       &:nth-child(1) {
         left: 0;
         top: 0;
-        margin-bottom: -4.4vw;
+        margin-bottom: -5vw;
         margin-top: -10vw;
         img {
           width: 100%;
@@ -71,7 +125,6 @@
       &:nth-child(2) {
         gap: 6.4vw;
         left: 0;
-        margin-bottom: 6.4vw;
         img {
           width: 100%;
           height: 289px;
