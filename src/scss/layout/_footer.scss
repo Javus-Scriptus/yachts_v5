@@ -1,79 +1,79 @@
-.footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
+// .footer {
+//     background-color: #333;
+//     color: #fff;
+//     padding: 20px 0;
+//     text-align: center;
+// }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
+// .container {
+//     max-width: 1200px;
+//     margin: 0 auto;
+//     padding: 0 20px;
+// }
 
-.footer__link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    color: #fff;
-}
+// .footer__link {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     text-decoration: none;
+//     color: #fff;
+// }
 
-.footer__logo img {
-    margin: 0 10px;
-}
+// .footer__logo img {
+//     margin: 0 10px;
+// }
 
-nav {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
-}
+// nav {
+//     display: flex;
+//     justify-content: center;
+//     margin: 20px 0;
+// }
 
-nav a {
-    color: #fff;
-    margin: 0 15px;
-    text-decoration: none;
-    font-size: 16px;
-}
+// nav a {
+//     color: #fff;
+//     margin: 0 15px;
+//     text-decoration: none;
+//     font-size: 16px;
+// }
 
-.social-icons {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
+// .social-icons {
+//     display: flex;
+//     justify-content: center;
+//     margin-top: 20px;
+// }
 
-.footer__logos img {
-    margin: 0 10px;
-    width: 24px;
-    height: 24px;
-}
+// .footer__logos img {
+//     margin: 0 10px;
+//     width: 24px;
+//     height: 24px;
+// }
 
-footer {
-    background-color: #444;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
-}
+// footer {
+//     background-color: #444;
+//     color: #fff;
+//     text-align: center;
+//     padding: 10px 0;
+//     margin-top: 20px;
+// }
 
-@media (max-width: 768px) {
-    .footer__link {
-        flex-direction: column;
-    }
+// @media (max-width: 768px) {
+//     .footer__link {
+//         flex-direction: column;
+//     }
 
-    nav {
-        flex-direction: column;
-    }
+//     nav {
+//         flex-direction: column;
+//     }
 
-    nav a {
-        margin: 10px 0;
-    }
+//     nav a {
+//         margin: 10px 0;
+//     }
 
-    .social-icons {
-        flex-direction: column;
-    }
+//     .social-icons {
+//         flex-direction: column;
+//     }
 
-    .footer__logos img {
-        margin: 10px 0;
-    }
-}
+//     .footer__logos img {
+//         margin: 10px 0;
+//     }
+// }
