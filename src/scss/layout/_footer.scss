@@ -77,3 +77,18 @@
 //         margin: 10px 0;
 //     }
 // }
+
+
+.footer {
+    max-width: 1216px;
+    height: 284px;
+    margin: 0 auto;
+    &__box {
+        display: flex;
+    }
+}
+
+.title {
+    display: flex;
+    align-items: center;
+}
