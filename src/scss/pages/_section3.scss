@@ -46,8 +46,8 @@
   .swiper-button-prev::after,
   .swiper-button-next::after {
     position: relative;
-    height: 1px !important;
-    width: 1px !important;
+    height: 0.1px !important;
+    width: 0.1px !important;
     color: #f6f5ef;
     top: 1.5vh;
     top: 33.5vh;
@@ -78,7 +78,8 @@
 
     &__name {
       margin-bottom: 4vh;
-      margin-left: 9.5vw;
+      // margin-left: 9.5vw;
+      margin-left: 10%;
       align-items: center;
       justify-content: center;
       display: flex;
@@ -93,7 +94,6 @@
 
     &__subheading {
       font-size: 15px;
-      margin-right: 13vw;
     }
 
     .description {
@@ -117,7 +117,7 @@
         // justify-content: center;
         // align-items: center;
         gap: 23%;
-
+        max-height: 22px;
         // text-align: center;
         // outline: 2px solid red;
 
@@ -127,6 +127,7 @@
 
         &__type,
         &__characteristics {
+          font-size: 10px;
           width: 20%;
           max-height: 100%;
           max-height: 50px;
