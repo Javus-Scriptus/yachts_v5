@@ -8,11 +8,16 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 20px 4%;
+  padding: 10px 4%;
   background-color: #24252a;
 
   &__position {
+    width: 100%;
+    margin: 0;
+    margin-left: 0;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   &__logo {
