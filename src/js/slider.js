@@ -1,12 +1,13 @@
 const swiper = new Swiper('.swiper', {
-  centeredSlides: true,
   direction: 'horizontal',
+  centeredSlides: true,
   lazyloading: true,
-  freeMode: true,
-  // autoplay: {
-  //   delay: 5000,
-  //   disableOnInteraction: false,
-  // },
+  freeMode: false,
+  loop: false,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
@@ -22,31 +23,16 @@ const swiper = new Swiper('.swiper', {
     320: {
       slidesPerView: 1,
       spaceBetween: 50,
-      loop: false
     },
     768: {
       slidesPerView: 2,
       spaceBetween: 30,
-      loop: true
     },
     1024: {
       slidesPerView: 3,
       spaceBetween: 40,
-      loop: true
     },
   },
 });
 
-const menuBtn = document.querySelector('.burger');
-let menuOpen = false;
-menuBtn.addEventListener('click', () => {
-  if (!menuOpen) {
-    menuBtn.classList.add('open');
-    menuOpen = true;
-    document.getElementById('header__nav').style.height = '100%';
-  } else {
-    menuBtn.classList.remove('open');
-    menuOpen = false;
-    document.getElementById('header__nav').style.height = '0%';
-  }
-});
+
