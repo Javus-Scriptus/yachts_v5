@@ -8,6 +8,7 @@
   .container {
     // width: 335px;
     width: 89.33vw;
+    min-width: 89.33vw
   }
 }
 
@@ -15,6 +16,7 @@
   .container {
     // width: 704px;
     width: 91.7vw;
+    min-width: 91.7vw
   }
 }
 
@@ -22,6 +24,7 @@
   .container {
     // width: 335px;
     width: 89.33vw;
+    min-width: 89.33vw
   }
 }
 
@@ -56,10 +59,11 @@ a {
 }
 
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
   list-style-type: none;
   text-decoration: none;
   user-select: none;
+}
+
+section {
+  outline: 2px solid red;
 }

@@ -1,3 +1,84 @@
+// .footer {
+//     background-color: #333;
+//     color: #fff;
+//     padding: 20px 0;
+//     text-align: center;
+// }
+
+// .container {
+//     max-width: 1200px;
+//     margin: 0 auto;
+//     padding: 0 20px;
+// }
+
+// .footer__link {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     text-decoration: none;
+//     color: #fff;
+// }
+
+// .footer__logo img {
+//     margin: 0 10px;
+// }
+
+// nav {
+//     display: flex;
+//     justify-content: center;
+//     margin: 20px 0;
+// }
+
+// nav a {
+//     color: #fff;
+//     margin: 0 15px;
+//     text-decoration: none;
+//     font-size: 16px;
+// }
+
+// .social-icons {
+//     display: flex;
+//     justify-content: center;
+//     margin-top: 20px;
+// }
+
+// .footer__logos img {
+//     margin: 0 10px;
+//     width: 24px;
+//     height: 24px;
+// }
+
+// footer {
+//     background-color: #444;
+//     color: #fff;
+//     text-align: center;
+//     padding: 10px 0;
+//     margin-top: 20px;
+// }
+
+// @media (max-width: 768px) {
+//     .footer__link {
+//         flex-direction: column;
+//     }
+
+//     nav {
+//         flex-direction: column;
+//     }
+
+//     nav a {
+//         margin: 10px 0;
+//     }
+
+//     .social-icons {
+//         flex-direction: column;
+//     }
+
+//     .footer__logos img {
+//         margin: 10px 0;
+//     }
+// }
+
+
 .footer {
     background-color: #333;
     color: #fff;
@@ -12,7 +93,40 @@
 }
 
 .footer__link {
+    max-width: 1216px;
+    margin: 0 auto;
+    color: white;
+    fill: rgba(246, 245, 239, 1);
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 64px;
+        margin-bottom: 186px;
+    }
+
+    &__special {
+        display: flex;
+        justify-content: center;
+        gap: 32px;
+
+        &--link {
+            margin-bottom: 16px;
+            color: rgba(246, 245, 239, 0.5);
+            transition: 250ms linear;
+        }
+
+        &--link:hover {
+            color: rgba(255, 255, 255, 0.837);
+            transition: 250ms linear;
+            transform: scale(1.1);
+        }
+    }
+}
+
+.title {
     display: flex;
+    gap: 5px;
     align-items: center;
     justify-content: center;
     text-decoration: none;
@@ -75,5 +189,99 @@ footer {
 
     .footer__logos img {
         margin: 10px 0;
+    fill: rgba(161, 181, 186, 1);
+
+    &__icon {
+        width: 29px;
+        height: 29px;
+    }
+
+    &__header {
+        font: 700 14px 'DM Sans', sans-serif;
+        line-height: 1.1;
+        text-transform: uppercase;
+    }
+}
+
+.nav {
+    align-items: center;
+    display: flex;
+    gap: 24px;
+
+    &__links {
+        text-transform: uppercase;
+        line-height: 1.1;
+        color: white;
+        font: 700 14px 'DM Sans', sans-serif;
+        transition: 250ms linear;
+
+        &:hover {
+            color: rgba(255, 255, 255, 0.534);
+            transition: 250ms linear;
+            transform: scale(1.1);
+        }
+    }
+}
+
+.social {
+    align-items: center;
+    display: block;
+
+    &__header {
+        margin-bottom: 16px;
+        text-transform: uppercase;
+        line-height: 1.1;
+        font: 700 14px 'DM Sans', sans-serif;
+    }
+
+    &__icon {
+        width: 40px;
+        height: 40px;
+        margin-right: 16px;
+        border-radius: 6px;
+        border: 1px solid rgba(246, 245, 239, 0.5);
+        cursor: pointer;
+        transition: 250ms linear;
+
+        &:hover {
+            fill: rgba(255, 255, 255, 0.534);
+            transition: 250ms linear;
+            transform: scale(1.1);
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        &__box {
+            margin-bottom: 117px;
+        }
+    }
+
+    .nav {
+        flex-direction: column;
+        margin-top: 60px;
+    }
+
+    .social {
+        margin-top: 60px;
+    }
+}
+
+@media (max-width: 540px) {
+    .footer {
+        &__box {
+            flex-direction: column;
+            margin-bottom: 40px;
+        }
+    }
+
+    .nav {
+        margin-right: auto;
+        margin-top: 40px;
+    }
+
+    .social {
+        margin-top: 71px;
     }
 }

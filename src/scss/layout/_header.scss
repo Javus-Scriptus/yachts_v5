@@ -4,8 +4,7 @@
 @use '/scss/abstracts/_base.scss';
 
 .header {
-  border-bottom: 1px solid;
-  display: flex;
+  @extend %centering;
   justify-content: flex-end;
   align-items: center;
   padding: 10px 4%;
@@ -18,6 +17,19 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+  border-bottom: 1px solid;
+  padding: 10px 4%;
+  
+  background-color: #24252a;
+
+  &__position {
+    // margin: 0;
+    // margin-left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
   }
 
   &__logo {
@@ -30,6 +42,15 @@
     white-space: nowrap;
     gap: 30px;
     outline: 2px solid red;
+
+    height: 25px;
+    font-weight: 600;
+    font-size: 20px;
+
+    transition: all 0.5s ease 0s;
+    &:hover {
+      color: rgba(0, 136, 169, 1);
+    }
   }
 
   &__breadcrumbs {
@@ -43,14 +64,11 @@
   // }
 
   &__link {
-    color: #f6f5ef;
-    font-family: 'DM Sans';
-    font-size: 17px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 118%; /* 16.52px */
-    letter-spacing: 0.42px;
+    @extend %regular-text;
     text-transform: uppercase;
+
+    font-weight: 700;
+    
     transition: all 0.5s ease 0s;
 
     &:hover {
@@ -63,14 +81,16 @@
 @media all and (max-width: 768px) {
   .header {
     &__nav {
+      position: fixed;
+      overflow-y: hidden;
+
       height: 0;
       width: 100%;
-      position: fixed;
       z-index: 2;
       top: 0;
       left: 0;
+
       background-color: #24252a;
-      overflow-y: hidden;
       transition: 0.5s;
     }
 
@@ -80,10 +100,10 @@
 
     &__link {
       padding: 10px;
+      display: block;
+
       text-decoration: none;
       font-size: 21px;
-      color: #edf0f1;
-      display: block;
       transition: 0.3s;
 
       &:hover,
@@ -94,9 +114,10 @@
 
     &__breadcrumbs {
       position: relative;
+      text-align: center;
+
       top: 25%;
       width: 100%;
-      text-align: center;
       margin-top: 30px;
     }
   }
@@ -106,28 +127,31 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    margin-left: 25px;
     width: 40px;
     height: 35px;
+
     cursor: pointer;
     transition: all 0.5s ease-in-out;
-    margin-left: 25px;
     z-index: 3;
 
     &__stripe {
-      background: #edf0f1;
       width: 40px;
       height: 4px;
       border-radius: 5px;
+
+      background: #edf0f1;
       transition: all 0.5s ease-in-out;
 
       &::before,
       &::after {
-        content: '';
-        background: #edf0f1;
-        color: #edf0f1;
         position: absolute;
+
         width: 40px;
         height: 4px;
+
+        background: #edf0f1;
         border-radius: 5px;
         transition: all 0.5s ease-in-out;
       }

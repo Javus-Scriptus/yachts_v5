@@ -1,3 +1,4 @@
+// basic textes
 %regular-text {
   font-family: 'DM Sans' sans-serif;
   font-size: 16px;
@@ -8,6 +9,7 @@
   letter-spacing: 0.42px;
 }
 
+// for containers and parents
 %centering {
   display: flex;
   justify-content: center;
@@ -16,6 +18,7 @@
   margin-right: auto;
 }
 
+//  background properties
 %bg-styles {
   background-repeat: no-repeat;
   background-position: center center;
