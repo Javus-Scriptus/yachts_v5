@@ -41,9 +41,6 @@
     opacity: 0.6;
   }
 
-  span.swiper-pagination-bullet.swiper-pagination-bullet-active {
-  }
-
   .swiper-button-prev::after,
   .swiper-button-next::after {
     position: relative;
@@ -71,7 +68,7 @@
       
       width: 85%;
       height: 52%;
-      margin-bottom: 5vh;
+      margin-bottom: 7vh;
       margin: 0 auto;
       border-radius: 10%;
 
@@ -148,10 +145,11 @@
 @media screen and (min-width: 768px) {
   .swiper-button-prev::after {
     position: relative;
-    color: #f6f5ef;
+
     // right: 2.4vw;
     left: -2.6vw;
     top: 2.5vh;
+    color: #f6f5ef;
   }
 
   .swiper-button-next::after {
@@ -178,12 +176,13 @@
   }
 
   .yacht {
+
     .benetti {
       margin-right: 0.5vw;
     }
 
     &__name {
-      margin-bottom: 4vh;
+      margin-bottom: 7vh;
       // margin-left: 5vw;
     }
 
@@ -240,6 +239,10 @@
   }
 
   .yacht {
+    &__img {
+      margin-bottom: 7vh;
+    }
+
     .container {
       min-width: 89.33vw;
     }
@@ -298,7 +301,7 @@
     }
 
     .stats {
-max-height: 20px;
+      max-height: 20px;
 
       &__type {
         font-size: 14px;
@@ -311,6 +314,7 @@ max-height: 20px;
   }
 
   .yacht {
+
     &__name {
       margin-bottom: 3vh;
       white-space: nowrap;
