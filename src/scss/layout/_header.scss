@@ -6,7 +6,17 @@
 .header {
   @extend %centering;
   justify-content: flex-end;
+  align-items: center;
+  padding: 10px 4%;
+  background-color: #24252a;
 
+  &__position {
+    width: 100%;
+    margin: 0;
+    margin-left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   border-bottom: 1px solid;
   padding: 10px 4%;
   
@@ -26,6 +36,12 @@
     @extend %regular-text;
     text-transform: uppercase;
     margin-right: auto;
+    width: 100px;
+    height: 25px;
+    display: flex;
+    white-space: nowrap;
+    gap: 30px;
+    outline: 2px solid red;
 
     height: 25px;
     font-weight: 600;
