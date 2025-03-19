@@ -1,21 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./style.css">
-  </head>// @use '/scss/abstracts/_mixins.scss';
+  // @use '/scss/abstracts/_mixins.scss';
   // @use '/scss/abstracts/_variables.scss';
   // @use '/scss/abstracts/_placeholders.scss';
   // @use '/scss/abstracts/_base.scss';
-  
   * {
     margin: 0;
     padding: 0;
@@ -236,23 +222,3 @@
               transform: scale(1);
     }
   }
-  <body>
-    <section class="information">
-      <div class="container-section5">
-        <picture>
-          <source src="./backrground.jpg 1x, ./backrground@2x.jpg 2x" media="(min-width:1200px)">
-          <img class="team__lll" src="./backrground.jpg" alt="">
-        </picture>
-        <h2 class="information__h2">
-          Our hills and valleys are like nothing you’ve seen.
-        </h2>
-        <p class="information__p">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit
-          amet magna commodo, tempus dolor sit amet, laoreet elit. Donec mauris
-          tortor.
-        </p>
-        <button class="information__button">Learn More</button>
-      </div>
-    </section>
-  </body>
-</html>
