@@ -1,5 +1,5 @@
-<section class="section__rend__yacht" id="services">
-  <article class="container__rend__yacht flexbox__rend__yacht container">
+<section class="section__rend__yacht">
+  <article class="container__rend__yacht flexbox__rend__yacht">
     <aside class="h2__and__img__rend__yacht">
       <h2 class="h2__rend__yacht">Rent a yacht now</h2>
        <picture>
@@ -81,8 +81,8 @@
     </form>
   </article>
 </section>
-<ul class="is-hidden backdrop" data-modal>
-  <li class="thanks__modal__send__yacht box__modal scale-up-center">
+<div class="is-hidden backdrop" data-modal>
+  <div class="thanks__modal__send__yacht box__modal scale-up-center">
     <img
       class="thanks__close__icon"
       src="../img/section5/close-svg.svg"
@@ -120,16 +120,45 @@
         "
         alt="img_yacht"
       />
+      <source
+        srcset="
+          https://raw.githubusercontent.com/Javus-Scriptus/Yachts/main/src/img/section1/yacht.webp    1x,
+          https://raw.githubusercontent.com/Javus-Scriptus/Yachts/main/src/img/section1/yacht@2x.webp 2x
+        "
+        media="(max-width: 420px)"
+      />
+      <source
+        srcset="
+          https://raw.githubusercontent.com/Javus-Scriptus/Yachts/main/src/img/section1/yacht.webp    1x,
+          https://raw.githubusercontent.com/Javus-Scriptus/Yachts/main/src/img/section1/yacht@2x.webp 2x
+        "
+        media="(min-width: 421px) and (max-width: 768px)"
+      />
+      <source
+        srcset="
+          https://raw.githubusercontent.com/Javus-Scriptus/Yachts/main/src/img/section1/yacht.webp    1x,
+          https://raw.githubusercontent.com/Javus-Scriptus/Yachts/main/src/img/section1/yacht@2x.webp 2x
+        "
+        media="(min-width: 769px)"
+      />
+      <img
+        class="thanks__yacht__img"
+        src="https://raw.githubusercontent.com/Javus-Scriptus/Yachts/main/src/img/section1/yacht.webp"
+        srcset="
+          https://raw.githubusercontent.com/Javus-Scriptus/Yachts/main/src/img/section1/yacht@2x.webp 2x
+        "
+        alt="img_yacht"
+      />
     </picture>
     <div class="thanks__text">
       <h2 class="thanks__h2__yacht__rend">Thank you</h2>
       <p class="thanks__p__yacht__rend">
-        Thank you for choosing Yacht Adventures, your booking details have
-        been received and our team will be in touch shortly to confirm your
-        reservation and provide any additional information or assistance you
-        may need.
+        Thank you for choosing Yacht Adventures, your booking details have been
+        received and our team will be in touch shortly to confirm your
+        reservation and provide any additional information or assistance you may
+        need.
       </p>
     </div>
-  </li>
-</ul>
+  </div>
+</div>
 <script src="../js/thanks.js"></script>
