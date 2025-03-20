@@ -1,126 +1,57 @@
-.section4 {
-  // margin: 0 32px;
-  outline: 2px solid red;
-  padding-top: 164px;
-  padding-bottom: 173px;
-  overflow: hidden;
-}
+ .features {
+   display: flex;
+   height: auto;
+ }
 
-
-  // &__diving {
-  //   display: flex;
-  //   flex-wrap: wrap;
-  // }
-
-  // &__pic1 {
-  //   width: 712px;
-  //   height: 632px;
-  //   // width: 55.625%;
-  //   outline: 2px solid red;
-  // }
-
-  // &__pic2 {
-  //   width: 440px;
-  //   height: 428px;
-  //   outline: 2px solid red;
-  // }
-
-  // &__pic3 {
-  //   width: 436px;
-  //   height: 352px;
-  //   outline: 2px solid red;
-  //   margin: 0 auto;
-  // }
-
-  // &__gap {
-  //   margin: 0 auto;
-  // }
-
-
- .sealist  { 
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  height: 800px;
-
-  &__diving {
+ .list {
+   display: flex;
+   flex-direction: column;
+   row-gap: 24px;
+   &__item{
     position: relative;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0 auto;
-    &--picture {
-      width: 900px;
-      height: 632px;
-      img {
-        border-radius: 40px;
-        margin-left: 600px;
-      }
-    }
 
-    &--button {
-      font-family: "DM Sans";
-      font-weight: 800;
-      position: absolute;
-      width: 106px;
-      height: 48px;
-      border-radius: 40px;
-      top: 538px;
-      left: 782px;
+   }
+   &__relaxation {
+     position: relative;
+      &--img{
+       width: 335px;
+       height: 335px;
+       border-radius: 40px;
+     }
     }
-  }
-}
-.sealist {
-  &__fishing {
-    position: relative;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0 auto;
-    margin-top: -432px;
-    margin-left: 863px;
-    &--picture {
-      width: 900px;
-      height: 632px;
-      img {
-        border-radius: 40px;
+   &__text1{
+   position: absolute;
+   font-size: 14px;
+   width: 95px;
+   padding: 14px 28px;
+   bottom: 24px;
+   left: 24px;
+   border-radius: 60px;
+   background-color: white;
+   color: black;
+   }
+   &__text2{
+    position: absolute;
+    font-size: 14px;
+    width: 100px;
+    bottom: 24px;
+    left: 24px;
+    padding: 14px 28px;
+    border-radius: 60px;
+    background-color: white;
+    color: black;
+    }
+    &__text3{
+      position: absolute;
+      font-size: 14px;
+      width: 128px;
+      bottom: 24px;
+      left: 24px;
+      padding: 14px 28px;
+      border-radius: 60px;
+      background-color: white;
+      color: black;
       }
-    }
 
-    &--button {
-      font-family: "DM Sans";
-      font-weight: 800;
-      position: absolute;
-      width: 106px;
-      height: 48px;
-      border-radius: 40px;
-      top: 350px;
-      left: 82px;
-    }
-  }
-}
-.sealist {
-  &__sunbathing {
-    position: relative;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0 auto;
-    &--picture {
-      width: 900px;
-      height: 632px;
-      img {
-        border-radius: 40px;
-      }
-    }
+ }
 
-    &--button {
-      font-family: "DM Sans";
-      font-weight: 800;
-      position: absolute;
-      width: 106px;
-      height: 48px;
-      border-radius: 40px;
-      top: 275px;
-      left: 82px;
-    }
-  }
-}
