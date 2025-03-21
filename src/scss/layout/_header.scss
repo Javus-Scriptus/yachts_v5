@@ -23,8 +23,15 @@
     height: 25px;
     display: flex;
     white-space: nowrap;
-    gap: 30px;
+    gap: 8px;
     outline: 2px solid red;
+    transition: 200ms linear;
+    &:hover {
+      color: rgba(255, 255, 255, 0.534);
+        fill: rgb(255, 255, 255);
+        transition: 200ms linear;
+        transform: scale(1.1);
+    }
   }
 
   &__breadcrumbs {
