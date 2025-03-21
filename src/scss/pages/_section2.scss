@@ -64,8 +64,8 @@
       margin: 0 auto;
       position: relative;
       &:nth-child(1) {
-        left: 0;
-        top: 0;
+        left: -68px;
+        top: -8.854vw;
         margin-bottom: 4.167vw;
         img {
           width: 100%;
@@ -101,7 +101,6 @@
     &__button {
       margin-bottom: 13.021vw;
       font: 700 18px 'DM Sans', sans-serif;
-      
     }
   }
 }
@@ -109,13 +108,12 @@
 @media (max-width: 375px) {
   .imgbox {
     &__yacht {
-      width: 100%;
-      margin: 0 auto;
-      position: relative;
+     
+      margin-left: -18.667vw;
       &:nth-child(1) {
         left: 0;
         top: 0;
-        margin-bottom: -5vw;
+        
         margin-top: -10vw;
         img {
           width: 100%;
@@ -123,7 +121,8 @@
         }
       }
       &:nth-child(2) {
-        gap: 6.4vw;
+        
+        margin-bottom: 5vw;
         left: 0;
         img {
           width: 100%;
@@ -131,6 +130,7 @@
         }
       }
       &:nth-child(3) {
+        margin: 0 auto;
         left: 0;
         top: 0;
         img {
@@ -142,16 +142,16 @@
     }
   }
   .textcont {
-    margin-top: -60px;
-    width: 90%;
+    width: 100%;
+    margin-top: -16vw;
     &__header {
-      font: 500 36px 'DM Sans', sans-serif;
+      font: 500 34px 'DM Sans', sans-serif;
       margin-bottom: 10.667vw;
     }
     &__button {
       margin-bottom: 21.333vw;
       font: 700 14px 'DM Sans', sans-serif;
-      
     }
   }
 }
+
