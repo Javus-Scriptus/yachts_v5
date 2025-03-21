@@ -35,17 +35,24 @@
     display: flex;
     gap: 5px;
     align-items: center;
-    fill: rgba(161, 181, 186, 1);
-
+    transition: 200ms linear;
+    cursor: pointer;
+    
     &__icon {
         width: 29px;
         height: 29px;
     }
-
+    
     &__header {
         font: 700 14px 'DM Sans', sans-serif;
         line-height: 1.1;
         text-transform: uppercase;
+    }
+    &:hover {
+        color: rgba(255, 255, 255, 0.534);
+        fill: rgb(255, 255, 255);
+        transition: 200ms linear;
+        transform: scale(1.1);
     }
 }
 
@@ -59,11 +66,11 @@
         line-height: 1.1;
         color: white;
         font: 700 14px 'DM Sans', sans-serif;
-        transition: 250ms linear;
+        transition: 200ms linear;
 
         &:hover {
             color: rgba(255, 255, 255, 0.534);
-            transition: 250ms linear;
+            transition: 200ms linear;
             transform: scale(1.1);
         }
     }
@@ -87,11 +94,18 @@
         border-radius: 6px;
         border: 1px solid rgba(246, 245, 239, 0.5);
         cursor: pointer;
-        transition: 250ms linear;
+        &--link {
+            transition: 200ms linear;
+            fill: rgb(255, 255, 255);
+            &:hover {
+                transition: 200ms linear;
+                fill: rgba(255, 255, 255, 0.534);
+            }
+        }
 
         &:hover {
             fill: rgba(255, 255, 255, 0.534);
-            transition: 250ms linear;
+            transition: 200ms linear;
             transform: scale(1.1);
         }
     }
